@@ -88,19 +88,31 @@
 
 <style>
   :root {
-    font-family: "Helvetica Neue", -apple-system, BlinkMacSystemFont, "Segoe UI",
-      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-      sans-serif;
+    font-family: Inter, sans-serif;
+    background-color: rgb(245, 245, 247);
   }
 
   main {
     max-width: 72ch;
     margin: 0 auto;
+    background-color: white;
+    border-radius: 18px;
+    padding: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   }
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 2px 4px 0px inset;
   }
 </style>
