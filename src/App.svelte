@@ -1,4 +1,5 @@
 <script lang="ts">
+  import Swim from "./components/swim.svelte";
   let runTime = 5;
   let walkTime = 1;
   let runPace = 9; // minutes per mile
@@ -18,14 +19,18 @@
 </script>
 
 <main>
-  <h1>Welcome to walk run pace calculator</h1>
-  <p>
-    This calculator will tell you your average pace for a given walk / run timer
-    and walking / running pace.
-  </p>
+  <section>
+    <h1>Welcome to Jon&rsquo;s sports calculators</h1>
+    <p>
+      This is a collection of calculators that I use for swim, bike, and run
+      training.
+    </p>
+  </section>
+  <hr />
 
   <!-- Walk / run split -->
 
+  <h2>Get average pace duing a walk-run.</h2>
   <section class="grid">
     <label for="runTime">
       <span>Run time in minutes</span>
@@ -84,6 +89,11 @@
       >{combinedMinutes} minutes {combinedSeconds} seconds</strong
     > per mile.
   </p>
+
+  <br />
+  <hr />
+  <!-- Swim split -->
+  <Swim />
 </main>
 
 <style>
@@ -94,7 +104,7 @@
 
   main {
     max-width: 72ch;
-    margin: 0 auto;
+    margin: 1rem auto;
     background-color: white;
     border-radius: 18px;
     padding: 1rem;
