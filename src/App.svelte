@@ -1,5 +1,6 @@
 <script lang="ts">
   import Swim from "./components/swim.svelte";
+  import RunMiToKm from "./components/run-mi-to-km.svelte";
   let runTime = 5;
   let walkTime = 1;
   let runPace = 9; // minutes per mile
@@ -94,12 +95,35 @@
   <hr />
   <!-- Swim split -->
   <Swim />
+
+  <br />
+  <hr />
+  <!-- Run Mi To Km -->
+  <RunMiToKm />
 </main>
 
 <style>
   :root {
     font-family: Inter, sans-serif;
     background-color: rgb(245, 245, 247);
+  }
+
+  :global(html),
+  :global(body) {
+    font-family: Inter, sans-serif;
+  }
+
+  :global(input) {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
+      rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.05) 0px 2px 4px 0px inset;
+  }
+
+  :global(:focus-visible) {
+    outline: 1px solid blue;
   }
 
   main {
@@ -115,14 +139,5 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1rem;
-  }
-
-  input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-shadow: rgb(255, 255, 255) 0px 0px 0px 0px,
-      rgba(0, 0, 0, 0.05) 0px 0px 0px 1px,
-      rgba(0, 0, 0, 0.05) 0px 2px 4px 0px inset;
   }
 </style>
