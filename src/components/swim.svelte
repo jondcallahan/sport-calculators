@@ -42,6 +42,7 @@
       id="paceInYardsMinutes"
       bind:value={yardsInputMinutes}
       min="0"
+      inputmode="numeric"
     />
 
     <label for="paceInYardsSeconds">
@@ -53,6 +54,7 @@
       id="paceInYardsSeconds"
       bind:value={yardsInputSeconds}
       min="0"
+      inputmode="numeric"
     />
 
     <p>
@@ -79,6 +81,7 @@
       id="paceInMetersMinutes"
       bind:value={metersInputMinutes}
       min="0"
+      inputmode="numeric"
     />
 
     <label for="paceInMetersSeconds">
@@ -90,6 +93,7 @@
       id="paceInMetersSeconds"
       bind:value={metersInputSeconds}
       min="0"
+      inputmode="numeric"
     />
 
     <p>

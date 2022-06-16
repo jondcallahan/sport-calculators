@@ -42,6 +42,8 @@
       id="runTime"
       bind:value={runTime}
       step="0.5"
+      min="0"
+      inputmode="numeric"
     />
 
     <label for="walkTime">
@@ -53,6 +55,8 @@
       id="walkTime"
       bind:value={walkTime}
       step="0.5"
+      min="0"
+      inputmode="numeric"
     />
   </section>
 
@@ -68,6 +72,8 @@
       id="runPace"
       bind:value={runPace}
       step="0.25"
+      min="0"
+      inputmode="numeric"
     />
 
     <label for="walkPace">
@@ -79,6 +85,8 @@
       id="walkPace"
       bind:value={walkPace}
       step="0.25"
+      min="0"
+      inputmode="numeric"
     />
   </section>
 

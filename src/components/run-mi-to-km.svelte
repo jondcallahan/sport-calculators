@@ -31,6 +31,7 @@
       id="paceInMilesMins"
       bind:value={milesInputMinutes}
       min="0"
+      inputmode="numeric"
     />
 
     <label for="paceInMilesSeconds">
@@ -42,6 +43,7 @@
       id="paceInMilesSeconds"
       bind:value={milesInputSeconds}
       min="0"
+      inputmode="numeric"
     />
 
     <p>
@@ -65,6 +67,7 @@
       id="paceInKmMins"
       bind:value={kmInputMinutes}
       min="0"
+      inputmode="numeric"
     />
 
     <label for="paceInKmSeconds">
@@ -76,6 +79,7 @@
       id="paceInKmSeconds"
       bind:value={kmInputSeconds}
       min="0"
+      inputmode="numeric"
     />
 
     <p>
